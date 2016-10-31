@@ -1,0 +1,16 @@
+//Given an array, find the int that appears an odd number of times.
+
+//There will always be only one integer that appears an odd number of times.
+
+//test.assert_equals(find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]), 5)
+
+
+def find_it(seq):
+    new_list = [(seq.count(i)) for i in seq]
+    indexOfOddInt = [i for i,k in enumerate(new_list) if k == oddno(new_list)]
+    return (seq[indexOfOddInt[0]])
+    
+def oddno(list_value):
+    for i in list_value:
+        if(i % 2 != 0):
+            return i

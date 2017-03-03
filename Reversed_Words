@@ -1,8 +1,0 @@
-#Reversed Words
-
-// reverseWords("The greatest victory is that which requires no battle")
-// should return "battle no requires which that is victory greatest The"
-//test.assert_equals(reverseWords("hello world!"), "world! hello")
-
-def reverseWords(str):
-    return ' '.join(str.split()[::-1])

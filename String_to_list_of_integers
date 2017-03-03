@@ -1,0 +1,16 @@
+String to list of integers.
+
+Instruction:
+
+Given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string, preserving the order.
+
+For example, give the string "1,2,3,4,5", the function string_to_int_list() should return [1,2,3,4,5]
+
+Example Test:
+test.assert_equals([1, 2, 3, 4, 5], string_to_int_list("1,2,3,4,5"))
+test.assert_equals([21, 12, 23, 34, 45], string_to_int_list("21,12,23,34,45"))
+
+Code :
+
+def string_to_int_list(s):
+    return [int(i) for i in s.split(',') if not i == '']

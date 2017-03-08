@@ -1,0 +1,15 @@
+#Convert_boolean_values_to_strings_Yes_or_No
+
+#Complete the bool_to_word (Javascript: boolToWord ) method.
+#Given: a boolean value
+#Return: a 'Yes' string for true and a 'No' string for false
+
+#TestCase
+
+Test.expect(bool_to_word(True), 'Yes')
+Test.expect(bool_to_word(False), 'No')
+
+#Code
+
+def bool_to_word(bool):
+    return 'Yes' if bool else 'No'
